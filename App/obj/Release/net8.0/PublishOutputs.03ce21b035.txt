@@ -1,0 +1,5 @@
+C:\Users\Ihean\OneDrive\Desktop\Articles\aks-n-acr-deployment\App\out\DotNet.Docker.exe
+C:\Users\Ihean\OneDrive\Desktop\Articles\aks-n-acr-deployment\App\out\DotNet.Docker.dll
+C:\Users\Ihean\OneDrive\Desktop\Articles\aks-n-acr-deployment\App\out\DotNet.Docker.deps.json
+C:\Users\Ihean\OneDrive\Desktop\Articles\aks-n-acr-deployment\App\out\DotNet.Docker.runtimeconfig.json
+C:\Users\Ihean\OneDrive\Desktop\Articles\aks-n-acr-deployment\App\out\DotNet.Docker.pdb
