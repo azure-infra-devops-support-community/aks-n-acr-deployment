@@ -1,26 +1,18 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Threading.Tasks;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure Kestrel to listen on all network interfaces on port 80
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(80); // Listen on 0.0.0.0:80
+});
+
 var app = builder.Build();
 
-int counter = 0;
-int max = args.Length > 0 ? Convert.ToInt32(args[0]) : -1;
-
-app.MapGet("/", () => $"Counter: {counter}");
-
-app.MapGet("/increment", async () =>
-{
-    if (max == -1 || counter < max)
-    {
-        counter++;
-        return $"Counter: {counter}";
-    }
-    return "Counter limit reached!";
-});
+// A single endpoint that returns a basic message
+app.MapGet("/", () => "Hello from the Azure Infrastructure DevOps Support Community!");
 
 app.Run();
