@@ -1,6 +1,6 @@
 # Stage 1: Build the .NET application
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /webapi
+WORKDIR /app
 
 # Copy the .csproj file from the webapi directory
 COPY webapi/webapi.csproj ./
